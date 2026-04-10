@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ui-layer">
+        <div id="main-menu" class="card">
+            <h1>NEON DEFENSE</h1>
+            <p>Place towers to stop the glitch. <br> Don't let them reach the bottom!</p>
+            <button id="start-btn">INITIALIZE SYSTEM</button>
+        </div>
+
+        <div id="game-ui" class="hidden">
+            <div id="sidebar">
+                <div class="stat">CREDITS: $<span id="money">200</span></div>
+                <div class="stat">LIVES: <span id="lives">10</span></div>
+                <hr>
+                <button class="shop-btn" id="build-tower">
+                    BASIC TOWER <br> <small>$50</small>
+                </button>
+                <p class="hint">Click map to place</p>
+            </div>
+        </div>
+
+        <div id="game-over" class="card hidden">
+            <h1>SYSTEM BREACH</h1>
+            <button id="restart-btn">REBOOT</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
